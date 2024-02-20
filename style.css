@@ -49,13 +49,16 @@ section.header-section {
     justify-content: space-between;
     align-items: center;
     padding-bottom: 20px;
-    /* padding-left: 12px; */
+    overflow-x: auto;
+    width: 98%;
+    
 }
 .table-head a {
     color: #fff;
     font-size: 18px;
     font-weight: 600;
     text-decoration: none;
+    white-space: nowrap; 
 }
 .table-container {
     margin: 40px 0;
@@ -85,6 +88,7 @@ section.header-section {
         justify-content: space-between;
         align-items: center;
         width: 98%;
+        
     }
 
     .btn-button {
@@ -242,3 +246,122 @@ footer {
     padding: 20px 0;
     background-color: ;
 }
+.momo {
+    display: none;
+}
+
+@media only screen and (max-width: 767px) {
+
+    .table-head {
+        flex-wrap: nowrap; /* Allow items to overflow and not wrap */
+    }
+    nav.Navbar {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        margin: 0 auto;
+    }
+    .nav-links {
+        display: none;
+    }
+    nav.Navbar svg {
+        display: none;
+    }
+    section.header-section {
+        width: 90%;
+        margin: 0 auto;
+        padding: 70px 0px;
+        text-align: center;
+    }
+    .header-section .decrease {
+        font-size: 20px;
+        font-weight: 400;
+        padding-top: 20px;
+    }
+
+    .table-container {
+        display: block;
+        overflow-x: auto;
+      }
+      .table-head {
+        display: none;
+      }
+      .momo {
+        display: block;
+    }
+      .table-menu {
+        display: flex;
+        /* flex-wrap: wrap; */
+      }
+      .table-menu > div {
+        flex: 0 0 75%;
+      }
+      .table-menu > div:nth-child(n+6) {
+        display: none;
+      }
+      .ternu-cnt .yellowu {
+        width: 50%;
+        padding-left: 30px;
+    }
+
+      .world-text {
+        width: 100%;
+        margin: 20px 0;
+    }
+    .world-text h1 {
+        font-size: 25px;
+        font-weight: 500;
+        text-transform: capitalize;
+    }
+      .map-container {
+        width: 90%;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+    }
+      .map-container img {
+        width: 100%;
+    }
+
+
+      .invest-text {
+        width: 100%;
+        display: flex;
+        gap: 30px;
+        flex-direction: column;
+    }
+    .invest-image {
+        position: relative;
+        width: 70%;
+        display: none;
+    }
+    .invest-text h1 {
+        font-size: 25px;
+    }
+    
+    
+
+
+
+
+      .main-footer {
+        display: flex;
+        gap: 20px;
+        width: 90%;
+        margin: 0 auto;
+        padding: 50px 0;
+        flex-direction: column;
+        align-content: center;
+        align-items: center;
+    }
+    .footer-second {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        flex-wrap: nowrap;
+        flex-direction: column;
+    }
+    }
+    
+    
